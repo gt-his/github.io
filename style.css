@@ -158,7 +158,8 @@ section a, aside a {
 }
 
 section a:hover, aside a:hover {
-     text-decoration: underline;
+     color: gray;
+     transition: all 0.5s;
 }
 
 section h3, aside h3 {
