@@ -158,8 +158,7 @@ section a, aside a {
 }
 
 section a:hover, aside a:hover {
-     color: gray;
-     transition: all 0.5s;
+     text-decoration: underline;
 }
 
 section h3, aside h3 {
@@ -310,23 +309,23 @@ aside ul {
 
 /* 「サイトについて」ページ */
 
-table {
+.about table {
      border-collapse: collapse;
 }
 
-th,td {
+.about th, .about td {
      border: solid 1px #cccccc;
      padding: 20px;
 }
 
-th {
+.about th {
      width: 4em;
      text-align: left;
      background-color: #555d6b;
      color: #ffffff;
 }
 
-td {
+.about td {
      background-color: #e8eef9;
 }
 
@@ -456,4 +455,48 @@ input[type="submit"] {
 }
 /* ===== pc版の設定ここまで ===== */
 
-
+/* カレンダー */ 
+.calendar table {
+     border-collapse: collapse;
+     border: 2px solid #eee;
+     font-family: 'Courier New' , monospace;
+     font-size: 14px;
+   }
+   
+   .calendar thead,
+   .calendar tfoot {
+     background: #eee;
+   }
+   
+   .calendar th,
+   .calendar td {
+     padding: 8px;
+     text-align: center;
+   }
+   
+   .calendar tbody td:first-child {
+     color: red;
+   }
+   
+   .calendar tbody td:last-child {
+     color: blue;
+   }
+   
+   .calendar tfoot {
+     font-weight: bold;
+   }
+   
+   .calendar td.disabled {
+     opacity: 0.3;
+   }
+   
+   .calendar td.today {
+     font-weight: bold;
+   }
+   
+   #prev,
+   #next,
+   #today {
+     cursor: pointer;
+     user-select: none;
+   }
