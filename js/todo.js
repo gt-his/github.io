@@ -32,7 +32,7 @@ function add(todo) {
       li.classList.add('text-decoration-line-through')
     }
 
-    li.addEventListener('contextmenu', function (event) {
+    li.addEventListener('dblclick', function (event) {
       event.preventDefault();
       li.remove();
       saveData();
