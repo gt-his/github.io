@@ -144,7 +144,7 @@ figure.hero img {
 
 
 /* 記事一覧 ＆ 記事ページの注目記事メニュー */
-aside ul {
+.top section, aside ul {
      grid-row: recent;
      display: grid;
      grid-template-columns: 1fr 1fr;
@@ -679,6 +679,7 @@ input[type="submit"] {
    .panel img {
      width: 90ox;
      height: 110px;
+     border-radius: 12px;
      margin-bottom: 4px;
    }
    
@@ -774,7 +775,7 @@ input[type="submit"] {
      }
      
      /* pc版：記事一覧 */
-     section {
+     .top section {
           grid-template-columns: repeat(4, 1fr);
           grid-column-gap: 20px;
           column-gap: 20px;
