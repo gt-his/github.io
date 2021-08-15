@@ -506,6 +506,151 @@ input[type="submit"] {
         text-align: center;
    }
 
+   /* 三択クイズ */
+
+   .quiz {
+     width: 100%;
+     min-height: 100vh;
+     font-size: 14px;
+     font-family: Verdana, sans-serif;
+     background: center/cover url("./img/hrg-sp.jpg");
+   }
+   
+   .quiz h1 {
+     font-size: 56px;
+     color: white;
+     text-shadow: 2px 2px 2px #155724, 3px 3px 3px #2880b9;
+     text-align: center;
+   }
+   
+   .quiz h2 {
+     text-align: center;
+     font-size: 24px;
+     color:#721c24;
+     margin-bottom: 64px;
+   }
+   
+   .quiz .container {
+     width: 400px;
+     margin: 8px auto;
+     background: white;
+     padding: 16px;
+     position: relative;
+   }
+   
+   #question {
+     margin-bottom: 16px;
+     font-weight: bold;
+   }
+   
+   #choices {
+     list-style: none;
+     padding: 0;
+     margin-bottom: 16px;
+   }
+   
+   #choices > li {
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     padding: 10px;
+     margin-bottom: 10px;
+     cursor: pointer;
+   }
+   
+   #choices > li:hover {
+     background: #f8f8f8;
+   }
+   
+   #choices > li.correct {
+     background: #ece914;
+     border-color: #c3e6cd;
+     color: #155724;
+     font-weight: bold;
+   }
+   
+   #choices > li.correct::after {
+     content: ' ... 正解^^';
+   }
+   
+   #choices > li.wrong {
+     background: #d8212d;
+     border-color: #f5c6cb;
+     color: #721c24;
+     font-weight: bold;
+   }
+   
+   #choices > li.wrong::after {
+     content: ' ... 不正解!';
+   }
+   
+   #btn, #result > a{
+     background: #3498db;
+     padding: 8px;
+     border-radius: 4px;
+     cursor: pointer;
+     text-align: center;
+     color: #fff;
+     box-shadow: 0 4px 0 #2880b9;
+   }
+   
+   #btn.disabled {
+     background: #ccc;
+     box-shadow: 0 4px 0 #bbb;
+     opacity: 0.7;
+   }
+   
+   #result {
+     position: absolute;
+     width: 300px;
+     background: #fff;
+     padding: 30px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     top: 50px;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     border-radius: 4px;
+     text-align: center;
+     transition: 0.4s;
+   }
+   
+   #result.hidden {
+     transform: translateY(-600px);
+   }
+   
+   #result > p {
+     font-size: 24px;
+   }
+   
+   #result > a {
+     display: block;
+     text-decoration: none;
+   }
+   
+   @media (max-width:1100px) {
+     .quiz {
+       background: center/cover url("./img/hrg-sp.jpg");
+     }
+   }
+   
+   @media (max-width:800px) {
+     .quiz {
+       background: center/cover url("./img/hrg-sp2.jpg");
+     }
+   
+     .quiz h1 {
+       font-size: 32px;
+     }
+   
+     .quiz h2 {
+       font-size: 16px;
+     }
+   
+     .quiz .container {
+       width: 80%;
+     }
+   }
+
 /* ===== pc版の設定 ===== */
 @media (min-width: 768px) {
 
