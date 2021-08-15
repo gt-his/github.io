@@ -144,7 +144,7 @@ figure.hero img {
 
 
 /* 記事一覧 ＆ 記事ページの注目記事メニュー */
-section, aside ul {
+aside ul {
      grid-row: recent;
      display: grid;
      grid-template-columns: 1fr 1fr;
@@ -516,14 +516,17 @@ input[type="submit"] {
      background: center/cover url("./img/hrg-sp.jpg");
    }
    
-   .quiz h1 {
+   .quiz h1,
+   .slot h1 {
      font-size: 56px;
      color: white;
      text-shadow: 2px 2px 2px #155724, 3px 3px 3px #2880b9;
      text-align: center;
+     padding-top: 32px;
    }
    
-   .quiz h2 {
+   .quiz h2,
+   .slot h2 {
      text-align: center;
      font-size: 24px;
      color:#721c24;
@@ -638,11 +641,13 @@ input[type="submit"] {
        background: center/cover url("./img/hrg-sp2.jpg");
      }
    
-     .quiz h1 {
+     .quiz h1,
+     .slot h1 {
        font-size: 32px;
      }
    
-     .quiz h2 {
+     .quiz h2,
+     .slot h2 {
        font-size: 16px;
      }
    
@@ -650,6 +655,73 @@ input[type="submit"] {
        width: 80%;
      }
    }
+
+/* スロットマシン */
+     .slot {
+     background: #dbc3c7;
+     font-size: 16px;
+     font-weight: bold;
+     font-family: Arial, sans-serif;
+     height: 400px;
+   }
+   
+     main {
+     width: 300px;
+     background: #ecf0f1;
+     padding: 20px;
+     border: 4px solid #fff;
+     border-radius: 12px;
+     margin: 16px auto;
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   .panel img {
+     width: 90ox;
+     height: 110px;
+     margin-bottom: 4px;
+   }
+   
+   .stop {
+     cursor: pointer;
+     width: 90px;
+     height: 32px;
+     background: #ef454a;
+     box-shadow: 0 4px 0 #d1483e;
+     border-radius: 16px;
+     line-height: 32px;
+     text-align: center;
+     font-size: 14px;
+     color: #fff;
+     user-select: none;
+   }
+   
+   #spin {
+     cursor: pointer;
+     width: 280px;
+     height: 36px;
+     background: #3498db;
+     box-shadow: 0 4px 0 #2800b9;
+     border-radius: 18px;
+     line-height: 36px;
+     text-align: center;
+     color: #fff;
+     user-select: none;
+     margin: 0 auto;
+   }
+   
+   .unmatched {
+     opacity: 0.5;
+   }
+   
+   .inactive {
+     opacity: 0.5;
+   }
+
+   .slot h2 {
+        margin-bottom: 20px;
+   }
+
 
 /* ===== pc版の設定 ===== */
 @media (min-width: 768px) {
